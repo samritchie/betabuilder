@@ -31,7 +31,9 @@ module BetaBuilder
 
     def xcodebuild(*args)
       # we're using tee as we still want to see our build output on screen
-      system("#{@configuration.xcodebuild_path} #{args.join(" ")} | tee build.output")
+      # return status code from xcodebuild task so that we can fail rake is the build falls over
+      system("#{@configuration.xcodebuild_path} #{args.join(" ")} | tee build.output; exit ${PIPESTATUS[0]}")
+      fail "xcodebuild failed" if not $?.success?
     end
 
     class Configuration < OpenStruct
