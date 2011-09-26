@@ -85,6 +85,7 @@ module BetaBuilder
       
       def deploy
         system("scp pkg/dist/* #{@configuration.remote_host}:#{@configuration.remote_installation_path}")
+        faile "web deployment failed" if not $?.success?
       end
     end
   end

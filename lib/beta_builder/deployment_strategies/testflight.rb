@@ -46,7 +46,7 @@ module BetaBuilder
         if (response.code == 201) || (response.code == 200)
           puts "Upload complete."
         else
-          puts "Upload failed. (#{response})"
+          fail "Upload failed. (#{response})"
         end
       end
       

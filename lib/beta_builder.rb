@@ -31,7 +31,8 @@ module BetaBuilder
 
     def xcodebuild(*args)
       # we're using tee as we still want to see our build output on screen
-      # return status code from xcodebuild task so that we can fail rake is the build falls over
+      # return status code from xcodebuild task so that we can fail rake if the build falls over
+      # this will only work if the shell is bash (but seriously, why wouldn't it be?)
       system("#{@configuration.xcodebuild_path} #{args.join(" ")} | tee build.output; exit ${PIPESTATUS[0]}")
       fail "xcodebuild failed" if not $?.success?
     end
