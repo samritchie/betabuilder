@@ -15,7 +15,7 @@ spec = Gem::Specification.new do |s|
 
   # Change these as appropriate
   s.name              = "betabuilder"
-  s.version           = "0.7.3"
+  s.version           = "0.7.4.1"
   s.summary           = "A set of Rake tasks and utilities for managing iOS ad-hoc builds"
   s.author            = "Luke Redpath"
   s.email             = "luke@lukeredpath.co.uk"
@@ -34,7 +34,7 @@ spec = Gem::Specification.new do |s|
   s.add_dependency("CFPropertyList", "~> 2.0.0")
   s.add_dependency('uuid', "~> 2.3.1")
   s.add_dependency('rest-client', '~> 1.6.1')
-  s.add_dependency('json', '~> 1.4.6')
+  s.add_dependency('json')
 
   # If your tests use any gems, include them here
   # s.add_development_dependency("mocha") # for example
