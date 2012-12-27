@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Luke Redpath}]
-  s.date = %q{2011-09-19}
+  s.date = %q{2011-09-26}
   s.email = %q{luke@lukeredpath.co.uk}
   s.extra_rdoc_files = [%q{README.md}, %q{LICENSE}, %q{CHANGES.md}]
   s.files = [%q{CHANGES.md}, %q{LICENSE}, %q{README.md}, %q{lib/beta_builder/archived_build.rb}, %q{lib/beta_builder/deployment_strategies/testflight.rb}, %q{lib/beta_builder/deployment_strategies/web.rb}, %q{lib/beta_builder/deployment_strategies.rb}, %q{lib/beta_builder.rb}, %q{lib/betabuilder.rb}]
