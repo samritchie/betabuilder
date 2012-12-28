@@ -5,18 +5,6 @@ Gem::Specification.new do |s|
   s.version = "0.7.4.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-<<<<<<< HEAD
-  s.authors = [%q{Luke Redpath}]
-  s.date = %q{2011-09-26}
-  s.email = %q{luke@lukeredpath.co.uk}
-  s.extra_rdoc_files = [%q{README.md}, %q{LICENSE}, %q{CHANGES.md}]
-  s.files = [%q{CHANGES.md}, %q{LICENSE}, %q{README.md}, %q{lib/beta_builder/archived_build.rb}, %q{lib/beta_builder/deployment_strategies/testflight.rb}, %q{lib/beta_builder/deployment_strategies/web.rb}, %q{lib/beta_builder/deployment_strategies.rb}, %q{lib/beta_builder.rb}, %q{lib/betabuilder.rb}]
-  s.homepage = %q{http://github.com/lukeredpath/betabuilder}
-  s.rdoc_options = [%q{--main}, %q{README.md}]
-  s.require_paths = [%q{lib}]
-  s.rubygems_version = %q{1.8.6}
-  s.summary = %q{A set of Rake tasks and utilities for managing iOS ad-hoc builds}
-=======
   s.authors = ["Luke Redpath"]
   s.date = "2012-05-16"
   s.email = "luke@lukeredpath.co.uk"
@@ -27,7 +15,6 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.11"
   s.summary = "A set of Rake tasks and utilities for managing iOS ad-hoc builds"
->>>>>>> c9918033245930829a62fb1913cebfa2e322c2fb
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
